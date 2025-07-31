@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>.mdReader | Cynosureturn</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A minimalist Markdown reader with tabbed view, export options, and support for English & Chinese." />
+  <!-- GitHub Markdown CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css/github-markdown.min.css">
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <button id="toggle-sidebar">☰</button>
+    <h1>.mdReader</h1>
+    <a href="https://cynosureturn.ca/" target="_blank" title="Cynosureturn.ca" rel="noopener noreferrer">
+      <img src="https://cynosureturn.ca/assets/img/favicon/cz__bm_favicon.svg" alt="Cynosureturn Home" width="36" height="36">
+    </a>
+  </header>
+  <!-- Sidebar -->
+  <div id="sidebar" class="sidebar expanded">    
+    <section id="load-via-url">
+      <div class="sidebar-section-header">
+        <h2>Load from URL</h2>
+        <button id="load-url-btn">Load and Render</button>
+      </div>
+      <input type="text" id="markdown-url" placeholder="Enter a Markdown file URL">
+      <div id="url-error-msg" class="error-message"></div>
+    </section>
+    <section id="dropbox">
+      <div class="sidebar-section-header">
+        <h2>Upload Markdown</h2>
+        <button id="file-picker-btn">Select Files</button>
+      </div>
+      <div id="drop-zone">Drag & drop <code>.md</code> files</div>
+      <input type="file" id="file-input" accept=".md" multiple style="display: none;">
+      <div id="drop-error-msg" class="error-message"></div>
+    </section>
+    <div id="drag-overlay"></div>
+    <section id="paste-md">
+      <div class="sidebar-section-header">
+        <h2 id="paste-title">Paste Markdown</h2>
+        <button id="render-paste-btn">Render</button>
+      </div>
+      <textarea id="markdown-input" placeholder="Paste your Markdown content here..."></textarea>
+      <div id="paste-error-msg" class="error-message"></div>
+    </section>
+    <section id="usage-instructions">
+      <h2>Usage Guide</h2>
+      <ul>
+        <li>🌐 Load Markdown from a URL (CORS must be allowed)</li>
+        <li>📂 Upload local <code>.md</code> files via drag & drop or “Select Files”</li>
+        <li>✏️ Paste Markdown content directly into the Paste section and render</li>
+        <li>📑 Multiple files are supported via tabs</li>
+        <li>🖨️ Use “Save as PDF” to print only the active tab</li>
+        <li>↔️ Collapse the sidebar with ☰ button</li>
+        <li>💡 Tip: Disable browser header/footer for clean printing</li>
+      </ul>
+
+    </section>
+    <div id="load-readme-btn">README.md</div>
+    <section id="language-toggle">
+        <label><input type="radio" name="language" value="en" checked> English</label><br>
+        <label><input type="radio" name="language" value="zh"> 中文</label>
+    </section>
+  </div>
+
+  <div class="container">
+    <!-- Main Content -->
+    <main class="content">
+      <section id="rendered-result">
+        <div id="style-toggle">
+          <h2 id="rendered-output-title">Rendered Output</h2>
+          <div class="switch-container">
+              <div class="tooltip-wrapper">
+                <span id="style-info-icon" class="info-icon">ℹ️</span>
+                <div class="tooltip-content" id="style-tooltip">
+                  Some browsers (especially in Dark Mode or Incognito) render GitHub Markdown CSS incorrectly.<br>
+                  This switch disables that style for better visibility.
+                </div>
+              </div>
+            <span>GitHub Style</span>
+            <label class="switch">
+              <input type="checkbox" id="github-css-toggle" checked>
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+        <div class="tab-container" id="tab-container"></div>
+        <div class="tab-content-container" id="tab-content-container"></div>
+      </section>
+        <div id="exportButtons">
+        <button id="scroll-to-top-btn">↑ Back to Top</button>
+        <button id="print-btn">🖨️ Save active tab as PDF</button>
+        <button id="download-md-btn">💾 Save as .md</button>
+      </div>
+    </main>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cynosureturn.ca/assets/js/common/crz-favicon-loader.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script type="module" src="main.js"></script>
+</body>
+
+</html>
