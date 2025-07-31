@@ -63,7 +63,6 @@ While there are powerful Markdown editors (like **Typora**, **StackEdit**, or **
 | Drag-and-drop local `.md` files        | ⚠️ Partial      | ✅     | ✅        | ✅            |
 | Load Markdown by URL                   | ❌              | ❌     | ❌        | ✅            |
 | Paste raw Markdown directly            | ❌              | ✅     | ✅        | ✅            |
-| Offline & zero-dependency              | ❌              | ❌     | ❌        | ✅            |
 | Multi-language UI                      | ❌              | ❌     | ❌        | ✅            |
 | Render-only (non-editable) interface   | ❌              | ❌     | ❌        | ✅            |
 | Export clean PDF (print-focused)       | ⚠️ Needs setup  | ✅     | ⚠️        | ✅            |
