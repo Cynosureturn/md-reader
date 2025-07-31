@@ -17,7 +17,6 @@ A lightweight browser-based tool for previewing `.md` (Markdown) files — suppo
 - 💾 Download current tab as raw `.md` file
 - 🧭 Toggleable sidebar for a distraction-free layout
 - 🌐 Switch between English and Simplified Chinese interface
-- 🎛️ Toggle GitHub-style Markdown CSS on/off (for better mobile compatibility)
 
 ---
 
@@ -50,10 +49,6 @@ A lightweight browser-based tool for previewing `.md` (Markdown) files — suppo
 ### 🔹 Language Toggle
 - Use the **radio buttons** at the bottom of the sidebar to switch UI language
 
-### 🔹 Toggle GitHub Style (Markdown Theme)
-- In some browsers (especially **mobile Incognito mode** or **system-wide Dark Mode**), GitHub Markdown CSS may render text with poor contrast (e.g. **white text on white background**).
-- Use the toggle next to **"Rendered Output"** to switch the GitHub styling **on or off**.
-- Turning it off falls back to a clean and simple local style for better readability.
 ---
 ## 🔍 Why Not Use Other Markdown Tools?
 

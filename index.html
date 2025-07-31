@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="A minimalist Markdown reader with tabbed view, export options, and support for English & Chinese." />
   <!-- GitHub Markdown CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css/github-markdown.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.8.1/github-markdown-light.min.css"/>
+
   <!-- Custom Styles -->
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -70,23 +71,7 @@
     <!-- Main Content -->
     <main class="content">
       <section id="rendered-result">
-        <div id="style-toggle">
-          <h2 id="rendered-output-title">Rendered Output</h2>
-          <div class="switch-container">
-              <div class="tooltip-wrapper">
-                <span id="style-info-icon" class="info-icon">ℹ️</span>
-                <div class="tooltip-content" id="style-tooltip">
-                  Some browsers (especially in Dark Mode or Incognito) render GitHub Markdown CSS incorrectly.<br>
-                  This switch disables that style for better visibility.
-                </div>
-              </div>
-            <span>GitHub Style</span>
-            <label class="switch">
-              <input type="checkbox" id="github-css-toggle" checked>
-              <span class="slider"></span>
-            </label>
-          </div>
-        </div>
+        <h2 id="rendered-output-title">Rendered Output</h2>
         <div class="tab-container" id="tab-container"></div>
         <div class="tab-content-container" id="tab-content-container"></div>
       </section>

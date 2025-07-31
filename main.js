@@ -401,33 +401,3 @@ document.getElementById('download-md-btn').addEventListener('click', () => {
 
   URL.revokeObjectURL(a.href);
 });
-
-// === GitHub CSS Toggle Switch ===
-const cssToggle = document.getElementById('github-css-toggle');
-const githubCssLink = document.querySelector('link[href*="github-markdown-css"]');
-
-function setGitHubStyle(enabled) {
-  githubCssLink.disabled = !enabled;
-  cssToggle.checked = enabled;
-}
-
-cssToggle.addEventListener('change', () => {
-  setGitHubStyle(cssToggle.checked);
-});
-
-window.addEventListener('DOMContentLoaded', () => {
-  setGitHubStyle(cssToggle.checked);
-});
-
-const infoIcon = document.getElementById('style-info-icon');
-const tooltip = document.getElementById('style-tooltip');
-const wrapper = infoIcon.closest('.tooltip-wrapper');
-
-infoIcon.addEventListener('click', (e) => {
-  e.stopPropagation();
-  wrapper.classList.toggle('show-tooltip');
-});
-
-document.addEventListener('click', () => {
-  wrapper.classList.remove('show-tooltip');
-});
