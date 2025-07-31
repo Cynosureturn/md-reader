@@ -1,6 +1,6 @@
 # 📝 .mdReader
 
-🔗 [Try .mdReader](https://cynosureturn.ca/portfolio/web-experiments/md-viewer/) 🌐 [Author’s Site](https://cynosureturn.ca)
+🔗 [Try .mdReader](https://cynosureturn.ca/portfolio/web-experiments/md-reader/) 🌐 [Author’s Site](https://cynosureturn.ca)
 
 A lightweight browser-based tool for previewing `.md` (Markdown) files — supporting **drag-and-drop**, **URL loading**, **manual paste**, **multi-tab view**, **PDF printing**, and **multi-language UI**.
 
