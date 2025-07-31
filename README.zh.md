@@ -1,6 +1,6 @@
 # 📝 .mdReader | Markdown 预览工具
 
-🔗 [在线演示](https://cynosureturn.ca/portfolio/web-experiments/md-reader/) 🌐 [个人主页](https://cynosureturn.ca)
+🔗 [在线演示](https://cynosureturn.github.io/md-reader/) 🌐 [个人主页](https://cynosureturn.ca)
 
 一个轻量级的浏览器端工具，用于预览 `.md`（Markdown）文件，支持**拖拽上传**、**通过 URL 加载**、**直接粘贴内容**、**多标签查看**、**导出 PDF**，并支持**中英文界面切换**。
 
